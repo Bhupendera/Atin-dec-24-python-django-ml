@@ -10,10 +10,12 @@
 1. Install Gunicorn:
    ```bash
    pip install gunicorn
+   pip install waitress
    ```
 2. Run the Django project using Gunicorn:
    ```bash
    gunicorn myproject.wsgi:application
+   waitress myproject.wsgi:application
    ```
 3. Access the application at `http://127.0.0.1:8000`.
 
@@ -74,6 +76,7 @@
 2. Create a `Procfile` in your project directory:
    ```bash
    echo "web: gunicorn myproject.wsgi:application" > Procfile
+   echo "web: waitress myproject.wsgi:application" > Procfile
    ```
 3. Login to Heroku and create a new app:
    ```bash
@@ -91,12 +94,3 @@
 
 ---
 
-## Additional Exercises
-1. Deploy your project to AWS Elastic Beanstalk or DigitalOcean.
-2. Configure HTTPS using an SSL certificate with NGINX.
-3. Experiment with scaling your application using Gunicorn workers:
-```bash
-gunicorn --workers 3 myproject.wsgi:application
-```
-
----

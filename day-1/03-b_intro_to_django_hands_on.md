@@ -35,7 +35,6 @@
        'employees',
    ]
    ```
-3. Verify that the app is recognized by Django.
 
 ---
 
@@ -93,6 +92,9 @@
    ]
    ```
 4. Run the server and visit `http://127.0.0.1:8000/employees`.
+   ```bash
+   python manage.py runserver
+   ```
 
 ---
 

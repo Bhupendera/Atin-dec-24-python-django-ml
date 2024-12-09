@@ -38,7 +38,7 @@ Deployment is the process of making your Python project accessible to users over
 
 2. **Use a Production-Ready Web Server**:
    - Django's development server is not suitable for production.
-   - Use a WSGI server like **Gunicorn**.
+   - Use a WSGI server like **Gunicorn** or **Waitress**.
 
 3. **Set Up a Reverse Proxy**:
    - Use a reverse proxy server like NGINX or Apache to:
@@ -74,10 +74,11 @@ Deployment is the process of making your Python project accessible to users over
 ### Key Concepts
 1. **Web Servers**:
    - **Gunicorn**: A Python WSGI HTTP Server for Unix.
+   - **Waitress**: A Python WSGI HTTP Server for Windows.
    - **uWSGI**: A full-stack server for hosting Python applications.
 
 2. **Reverse Proxy**:
-   - **NGINX**: Highly scalable and commonly used with Gunicorn.
+   - **NGINX**: Highly scalable and commonly used with Gunicorn or Waitress.
    - **Apache**: A versatile web server.
 
 3. **Hosting Platforms**:
