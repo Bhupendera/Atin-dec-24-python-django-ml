@@ -101,7 +101,6 @@ Python provides powerful libraries like `pyodbc` for interacting with relational
 
 ## Hands-On Activities
 Refer to the file: `02_python_db_connectivity_hands_on.md`
-```
 
 ---
 

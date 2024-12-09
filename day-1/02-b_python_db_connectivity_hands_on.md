@@ -17,7 +17,7 @@ https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-
 ## Task 1: Connecting Python to MS SQL
 1. Open a Python IDE or text editor.
 2. Write a script to connect to the database:
-   ```python
+```python
 import pyodbc
 
 drivers = pyodbc.drivers()
@@ -40,8 +40,8 @@ conn = pyodbc.connect(
 
 print("Connection Successful!")
 conn.close()
+```
 
-   ```
 3. Run the script and verify the connection.
 
 ---
@@ -102,7 +102,7 @@ conn.close()
 1. Write a Python script to fetch employees from a specific department.
 2. Create a function to handle database operations like `insert`, `update`, and `delete` dynamically.
 3. Add logging to your Python script to track all database queries.
-```
+
 
 ---
 
