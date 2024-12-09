@@ -1,0 +1,5 @@
+Resolve remote connection:
+ - Enable TCP/IP Protocol in SQL Server Configuration Manager:
+ - Allow SQL Server in Windows Firewall
+ - Configure SQL Server to Allow Remote Connections
+
