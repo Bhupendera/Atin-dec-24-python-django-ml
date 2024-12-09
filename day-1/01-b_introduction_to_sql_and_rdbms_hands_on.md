@@ -76,4 +76,3 @@
 ## Additional Exercises
 1. Add new columns to the `employees` table and populate them.
 2. Use aggregate functions like `COUNT`, `AVG`, and `SUM` on the data.
-```

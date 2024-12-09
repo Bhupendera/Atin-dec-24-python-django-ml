@@ -100,4 +100,3 @@
 1. Create another app for managing departments and link it to employees using a foreign key.
 2. Create a database migration that adds an additional field (e.g., `email`) to the `Employee` model.
 3. Create a view that displays all employees in a simple HTML template.
-```

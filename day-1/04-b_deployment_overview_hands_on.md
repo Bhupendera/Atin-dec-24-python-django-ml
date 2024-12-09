@@ -95,9 +95,8 @@
 1. Deploy your project to AWS Elastic Beanstalk or DigitalOcean.
 2. Configure HTTPS using an SSL certificate with NGINX.
 3. Experiment with scaling your application using Gunicorn workers:
-   ```bash
-   gunicorn --workers 3 myproject.wsgi:application
-   ```
+```bash
+gunicorn --workers 3 myproject.wsgi:application
 ```
 
 ---
