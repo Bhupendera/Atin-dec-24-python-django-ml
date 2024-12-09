@@ -91,6 +91,3 @@ Deployment is the process of making your Python project accessible to users over
      - Cost-effective VPS for custom deployment.
 
 ---
-
-## Hands-On Activities
-Refer to the file: `04_deployment_overview_hands_on.md`
