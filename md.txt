@@ -1,0 +1,71 @@
+ Volume in drive D is Windows
+ Volume Serial Number is 949A-70EE
+
+ Directory of D:\23-trainings\2-Confirmed\3-Python-dJango-ML\GH
+
+07-12-2024  17:45            10,414 README.md
+               1 File(s)         10,414 bytes
+
+ Directory of D:\23-trainings\2-Confirmed\3-Python-dJango-ML\GH\day-1
+
+07-12-2024  18:02             1,882 01_introduction_to_sql_and_rdbms_hands_on.md
+07-12-2024  18:00             1,972 01_introduction_to_sql_and_rdbms_theory.md
+07-12-2024  18:05             2,326 02_python_db_connectivity_hands_on.md
+07-12-2024  18:05             2,923 02_python_db_connectivity_theory.md
+07-12-2024  18:07             2,625 03_intro_to_django_hands_on.md
+07-12-2024  18:06             2,729 03_intro_to_django_theory.md
+07-12-2024  18:08             2,490 04_deployment_overview_hands_on.md
+07-12-2024  18:07             3,082 04_deployment_overview_theory.md
+               8 File(s)         20,029 bytes
+
+ Directory of D:\23-trainings\2-Confirmed\3-Python-dJango-ML\GH\day-2
+
+07-12-2024  18:12             2,193 06_django_models_hands_on.md
+07-12-2024  18:12             2,491 06_django_models_theory.md
+07-12-2024  18:14             2,979 07_django_forms_hands_on.md
+07-12-2024  18:13             4,201 07_django_forms_theory.md
+07-12-2024  18:17             4,438 08_django_crud_operations_hands_on.md
+07-12-2024  18:15             3,566 08_django_crud_operations_theory.md
+07-12-2024  18:18             5,032 09_django_mini_project_hands_on.md
+07-12-2024  18:18             2,368 09_django_mini_project_theory.md
+               8 File(s)         27,268 bytes
+
+ Directory of D:\23-trainings\2-Confirmed\3-Python-dJango-ML\GH\day-3
+
+07-12-2024  18:20             3,279 10_django_user_authentication_hands_on.md
+07-12-2024  18:19             4,080 10_django_user_authentication_theory.md
+07-12-2024  18:21             3,026 11_intro_to_flask_hands_on.md
+07-12-2024  18:20             3,050 11_intro_to_flask_theory.md
+07-12-2024  18:22             3,256 12_jinja2_templating_hands_on.md
+07-12-2024  18:21             3,485 12_jinja2_templating_theory.md
+07-12-2024  18:24             5,473 13_flask_mini_project_hands_on.md
+07-12-2024  18:23             1,751 13_flask_mini_project_theory.md
+07-12-2024  18:26             2,441 14_flask_deployment_hands_on.md
+07-12-2024  18:26             3,924 14_flask_deployment_theory.md
+              10 File(s)         33,765 bytes
+
+ Directory of D:\23-trainings\2-Confirmed\3-Python-dJango-ML\GH\day-4
+
+07-12-2024  18:27             6,969 15_flask_apis_hands_on.md
+07-12-2024  18:26             4,283 15_flask_apis_theory.md
+07-12-2024  18:29             3,056 16_publishing_ml_apis_hands_on.md
+07-12-2024  18:29             3,644 16_publishing_ml_apis_theory.md
+07-12-2024  18:31             2,899 17_calling_apis_hands_on.md
+07-12-2024  18:30             3,937 17_calling_apis_theory.md
+07-12-2024  18:32             2,849 18_ml_concepts_hands_on.md
+07-12-2024  18:31             4,327 18_ml_concepts_theory.md
+               8 File(s)         31,964 bytes
+
+ Directory of D:\23-trainings\2-Confirmed\3-Python-dJango-ML\GH\day-5
+
+07-12-2024  18:33             2,130 19_pandas_data_visualization_hands_on.md
+07-12-2024  18:32             3,767 19_pandas_data_visualization_theory.md
+07-12-2024  18:34             3,137 20_ml_integration_advanced_concepts_hands_on.md
+07-12-2024  18:33             3,751 20_ml_integration_advanced_concepts_theory.md
+07-12-2024  18:36             3,031 21_consolidation_and_additional_topics_hands_on.md
+07-12-2024  18:35             3,322 21_consolidation_and_additional_topics_theory.md
+               6 File(s)         19,138 bytes
+
+     Total Files Listed:
+              41 File(s)        142,578 bytes
+               0 Dir(s)  1,452,364,029,952 bytes free
