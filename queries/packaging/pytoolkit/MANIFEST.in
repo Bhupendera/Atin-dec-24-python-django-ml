@@ -1,0 +1,2 @@
+global-exclude *.py
+recursive-include pytoolkit_package/__pycache__ *.pyc
