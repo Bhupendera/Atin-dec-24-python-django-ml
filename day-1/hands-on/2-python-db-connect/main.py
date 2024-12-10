@@ -1,4 +1,7 @@
 import pyodbc
+import common
+
+common.hello()
 
 drivers = pyodbc.drivers()
 print("Available ODBC Drivers:")
