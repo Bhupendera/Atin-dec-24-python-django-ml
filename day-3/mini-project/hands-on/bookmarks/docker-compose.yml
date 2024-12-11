@@ -1,0 +1,29 @@
+services:
+  web:
+    build: .
+    volumes:
+      - .:/code
+  web_migrate:
+    extends:
+      service: web
+    command: >
+      bash -c "
+      python /code/bookmarks/manage.py migrate &&
+      if [ ! -z \"$DJANGO_SUPERUSER_USERNAME\" ] && [ ! -z \"$DJANGO_SUPERUSER_PASSWORD\" ]; then
+        python /code/bookmarks/manage.py createsuperuser --noinput --username $DJANGO_SUPERUSER_USERNAME --email $DJANGO_SUPERUSER_EMAIL;
+      else
+        echo 'Skipping superuser creation: DJANGO_SUPERUSER_USERNAME and DJANGO_SUPERUSER_PASSWORD not set.';
+      fi
+      "
+    env_file:
+      - .env
+  web_run:
+    extends:
+      service: web
+    command: python /code/bookmarks/manage.py runserver 0.0.0.0:8000
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - web_migrate
