@@ -76,11 +76,19 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mssql',
+        'NAME': 'atindb',  # Replace with your database name
+        'USER': 'SuperUser',  # Replace with your username
+        'PASSWORD': 'Azure@123456',  # Replace with your password
+        'HOST': 'tcp:vmsqlsvr.francecentral.cloudapp.azure.com',  # Replace with your server name or IP
+        'PORT': '1433',  # Default SQL Server port
+        'OPTIONS': {
+            'driver': 'ODBC Driver 18 for SQL Server',
+            'Encrypt': 'optional',  # Enable encryption for Azure SQL Server
+            'timeout': 30,  # Increase timeout in seconds
+        },
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

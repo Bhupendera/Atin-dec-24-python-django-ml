@@ -37,6 +37,8 @@ def save_to_db(df, table_name):
     df.to_sql(table_name, con=engine, if_exists='append', index=False)
     print("Data saved to database.")
 
+print ("__name__: ", __name__)
+
 if __name__ == '__main__':
     # Example CSV file
     csv_file_path = 'users.csv'
