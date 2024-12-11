@@ -20,15 +20,11 @@
      ```bash
      myenv\Scripts\activate
      ```
-   - **macOS/Linux**:
-     ```bash
-     source myenv/bin/activate
-     ```
 
 ### Install Django
 1. Install Django:
    ```bash
-   pip install django==5.0
+   pip install django
    ```
 2. Verify the installation:
    ```bash
@@ -68,20 +64,17 @@ myproject/
 ## **3. Creating and Applying Migrations**
 1. Initial migrations:
    ```bash
-   python manage.py migrate
+   python manage.py makemigrations
    ```
 2. Create migrations for a new model:
    ```bash
-   python manage.py makemigrations
-   ```
-3. View the SQL of a migration:
-   ```bash
-   python manage.py sqlmigrate blog 0001
-   ```
-4. Apply migrations:
-   ```bash
    python manage.py migrate
    ```
+3. Create new blog app
+   ```bash
+   python manage.py startapp blog
+   ```
+#### - Note: Please do an entry for app in settings.py with the name - blog
 
 ---
 
@@ -100,11 +93,22 @@ myproject/
        def __str__(self):
            return self.title
    ```
-2. Generate migrations for the model:
+
+2. Migrations
    ```bash
    python manage.py makemigrations
+   ```
+
+3. View the SQL of a migration:
+   ```bash
+   python manage.py sqlmigrate blog 0001*
+   ```
+   
+4. Apply migrations:
+   ```bash
    python manage.py migrate
    ```
+
 
 ---
 
@@ -173,7 +177,14 @@ python manage.py shell
    ```bash
    python manage.py createsuperuser
    ```
-3. Log in to the admin panel:
+
+3. Run server
+   ```bash
+   python manage.py runserver
+   ```
+
+
+4. Log in to the admin panel:
    ```
    http://127.0.0.1:8000/admin/
    ```
