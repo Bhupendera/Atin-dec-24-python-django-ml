@@ -254,3 +254,6 @@ In SQLAlchemy, the **primary key** column (usually named `id`) behaves similarly
 - **Primary Key Naming**: SQLAlchemy does not automatically create a column named `id`. If you want to use `id` as the primary key, you can explicitly define it in the model class as `id = Column(Integer, primary_key=True)`.
 
 ---
+
+## References:
+ - https://docs.djangoproject.com/en/5.1/ref/models/options/
