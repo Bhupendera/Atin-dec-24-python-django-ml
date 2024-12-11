@@ -8,6 +8,10 @@ services:
       service: web
     command: >
       bash -c "
+      python /code/bookmarks/manage.py makemigrations
+      python /code/bookmarks/manage.py migrate
+      python /code/bookmarks/manage.py makemigrations account
+      python /code/bookmarks/manage.py makemigrations images
       python /code/bookmarks/manage.py migrate &&
       if [ ! -z \"$DJANGO_SUPERUSER_USERNAME\" ] && [ ! -z \"$DJANGO_SUPERUSER_PASSWORD\" ]; then
         python /code/bookmarks/manage.py createsuperuser --noinput --username $DJANGO_SUPERUSER_USERNAME --email $DJANGO_SUPERUSER_EMAIL;
