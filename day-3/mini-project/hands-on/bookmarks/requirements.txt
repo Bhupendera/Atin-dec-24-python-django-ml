@@ -1,0 +1,10 @@
+asgiref
+Django
+sqlparse
+Pillow
+python-decouple
+django-extensions
+werkzeug
+pyOpenSSL
+requests
+easy-thumbnails
