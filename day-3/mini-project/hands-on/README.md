@@ -3,7 +3,7 @@
 ---
 
 ### Introduction
-This hands-on guide complements the conceptual overview, detailing every practical step required to build and implement the features of an interactive image bookmarking website. It covers model creation, form customization, admin configuration, JavaScript integration, and performance optimization.
+This hands-on guide complements the conceptual overview, detailing every practical step required to build and implement the features of an interactive image bookmarking website. It covers model creation, form customization, admin configuration and JavaScript integration
 
 ---
 

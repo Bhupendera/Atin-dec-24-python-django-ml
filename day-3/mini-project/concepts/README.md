@@ -202,18 +202,3 @@ To prevent abuse, implement rate limiting using Django middleware or third-party
 
 ---
 
-### Backend Optimization
-
-#### 1. Caching Strategies
-Use Django’s caching framework to store frequently accessed resources:
-
-- **In-Memory Caching**: Use `Memcached` or `Redis` for fast access.
-- **Template Fragment Caching**: Cache parts of templates that do not change frequently.
-
-#### 2. Query Optimization
-Ensure efficient database interactions:
-
-- Use `select_related()` and `prefetch_related()` to optimize queries involving related models.
-- Leverage database indexing to speed up lookups and filters.
-
----
