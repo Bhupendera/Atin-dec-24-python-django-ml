@@ -138,6 +138,3 @@ Jinja2 is a modern and powerful templating engine for Python, integrated into Fl
      ```
 
 ---
-
-## Hands-On Activities
-Refer to the file: `12_jinja2_templating_hands_on.md`

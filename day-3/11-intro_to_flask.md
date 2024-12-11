@@ -119,6 +119,3 @@ Flask is a lightweight and flexible Python web framework designed for simplicity
      ```
 
 ---
-
-## Hands-On Activities
-Refer to the file: `11_intro_to_flask_hands_on.md`
