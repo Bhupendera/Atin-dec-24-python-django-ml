@@ -1,0 +1,21 @@
+<h1>Employee List</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Department</th>
+        <th>Actions</th>
+    </tr>
+    {% for employee in employees %}
+    <tr>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.department }}</td>
+        <td>
+            <a href="/employees/{{ employee.id }}/edit/">Edit</a>
+            <a href="/employees/{{ employee.id }}/delete/">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/employees/new/">Add New Employee</a>

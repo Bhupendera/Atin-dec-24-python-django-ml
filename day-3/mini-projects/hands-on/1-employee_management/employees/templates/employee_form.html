@@ -1,0 +1,12 @@
+<h1>{{ employee.id|default:'Add New Employee' }}</h1>
+<form method="post">
+    {% csrf_token %}
+    <label>Name:</label><input type="text" name="name" value="{{ employee.name|default:'' }}"><br>
+    <label>Email:</label><input type="email" name="email" value="{{ employee.email|default:'' }}"><br>
+    <label>Date of Birth:</label><input type="date" name="date_of_birth" value="{{ employee.date_of_birth|default:'' }}"><br>
+    <label>Department:</label><input type="text" name="department" value="{{ employee.department|default:'' }}"><br>
+    <label>Salary:</label><input type="number" step="0.01" name="salary" value="{{ employee.salary|default:'' }}"><br>
+    <label>Hire Date:</label><input type="date" name="hire_date" value="{{ employee.hire_date|default:'' }}"><br>
+    <button type="submit">Save</button>
+</form>
+<a href="/employees/">Back to List</a>
