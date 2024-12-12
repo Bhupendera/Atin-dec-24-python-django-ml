@@ -42,6 +42,8 @@ class Item(Resource):
         return data
 
     def delete(self, item_id):
+        print(item_id)
+        print(items)
         abort_if_item_not_found(item_id)
         del items[item_id]
         return '', 204
