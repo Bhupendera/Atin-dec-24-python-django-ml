@@ -1,0 +1,6 @@
+venv/
+**/venv
+venv/*
+myvenv/
+**/myvenv
+myvenv/*
