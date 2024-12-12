@@ -11,3 +11,8 @@ urlpatterns = [
     path('auth/', include('auth_app.urls')),
     path('', home_view, name='home'),  # Add this line for the home page
 ]
+
+
+
+handler404 = 'employee_management.views.custom_404'
+handler500 = 'employee_management.views.custom_500'
