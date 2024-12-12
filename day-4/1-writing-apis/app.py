@@ -1,6 +1,6 @@
 # File: app.py
 
-from flask import Flask, request, jsonify
+from flask import Flask, request
 from flask_restful import Api, Resource, abort
 
 app = Flask(__name__)
@@ -21,25 +21,25 @@ class HelloWorld(Resource):
 
 class ItemList(Resource):
     def get(self):
-        return jsonify(items)
+        return items  # Return the items list directly
 
     def post(self):
         data = request.json
         if "name" not in data:
-            return jsonify({"error": "Name is required"}), 400
+            return {"error": "Name is required"}, 400
         items.append(data)
-        return jsonify(data), 201
+        return data, 201
 
 class Item(Resource):
     def get(self, item_id):
         abort_if_item_not_found(item_id)
-        return jsonify(items[item_id])
+        return items[item_id]  # Return the specific item
 
     def put(self, item_id):
         abort_if_item_not_found(item_id)
         data = request.json
         items[item_id] = data
-        return jsonify(data)
+        return data
 
     def delete(self, item_id):
         abort_if_item_not_found(item_id)
