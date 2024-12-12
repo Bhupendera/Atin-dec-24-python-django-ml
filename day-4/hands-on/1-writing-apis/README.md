@@ -110,41 +110,6 @@ curl http://127.0.0.1:5000/hello
 
 ---
 
-## Subtopic 4: Error Handling and Validation
-
-### Key Concepts
-1. **Error Responses**:
-   - Use Flask's error handlers for custom error messages:
-     ```python
-     @app.errorhandler(404)
-     def not_found(error):
-         return jsonify({"error": "Resource not found"}), 404
-     ```
-
-2. **Input Validation**:
-   - Validate input data before processing:
-     ```python
-     from flask import request, jsonify
-
-     @app.route("/items", methods=["POST"])
-     def add_item():
-         data = request.json
-         if "name" not in data:
-             return jsonify({"error": "Name is required"}), 400
-         return jsonify(data), 201
-     ```
-
-3. **Flask-RESTful Error Handling**:
-   - Flask-RESTful provides built-in error handling:
-     ```python
-     from flask_restful import abort
-
-     def abort_if_item_not_found(item_id):
-         if item_id not in items:
-             abort(404, message="Item {} doesn't exist".format(item_id))
-     ```
-
----
 
 ## Subtopic 5: Testing APIs
 
@@ -158,16 +123,4 @@ curl http://127.0.0.1:5000/hello
      ```bash
      curl -X GET http://127.0.0.1:5000/
      ```
-
-3. **Automated Testing**:
-   - Use `unittest` or `pytest` for API testing:
-     ```python
-     import unittest
-
-     class TestAPI(unittest.TestCase):
-         def test_get_items(self):
-             response = app.test_client().get("/items")
-             self.assertEqual(response.status_code, 200)
-     ```
-
 ---
